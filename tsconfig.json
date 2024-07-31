@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es2016",                                  /* Establece la versión de JavaScript a la que se compilará el código TypeScript. */
+    "module": "commonjs",                                /* Especifica el sistema de módulos para el código compilado. */
+    "experimentalDecorators": true,                      /* Habilita el soporte experimental para decoradores. */
+    "emitDecoratorMetadata": true,                       /* Emite metadatos de diseño para declaraciones decoradas en los archivos de origen. */
+    "esModuleInterop": true,                             /* Facilita la interoperabilidad con módulos CommonJS. */
+    "forceConsistentCasingInFileNames": true,            /* Asegura que el uso de mayúsculas y minúsculas en los nombres de archivos sea consistente. */
+    "strict": true,                                      /* Activa todas las opciones de comprobación estricta. */
+    "skipLibCheck": true,                                /* Omite la comprobación de tipos en los archivos de definición de biblioteca. */
+    "outDir": "./dist",                                 /* Especifica un directorio de salida para todos los archivos emitidos. */
+    "rootDir": "./src/index.ts",                                  /* Especifica la raíz del directorio para la entrada de archivos. */
+    "sourceMap": true,                                  /* Crea archivos de mapa de origen para la depuración. */
+    "declaration": true,                                /* Genera archivos de declaración .d.ts. */
+    "declarationMap": true,                             /* Crea archivos de mapa de declaración para los archivos .d.ts. */
+    "resolveJsonModule": true,                          /* Habilita la importación de archivos .json. */
+    "baseUrl": "./",                                    /* Establece la raíz para resolver módulos. */
+    "paths": {                                          /* Define mapeos personalizados para módulos. */
+      "*": ["node_modules/*"]
+    }
+  },
+  "include": [
+    "src/**/*"                                         /* Incluye todos los archivos TypeScript en el directorio src. */
+  ],
+  "exclude": [
+    "node_modules",                                    /* Excluye el directorio node_modules de la compilación. */                                   /* Excluye los archivos de prueba TypeScript de la compilación. */
+  ]
+}
